@@ -102,6 +102,10 @@
   font-size: 14px;
 }
 
+.resize{
+  resize: none;
+}
+
 @media (max-width: 800px) {
   .menus-wrapper {
     display: none;
