@@ -13,7 +13,7 @@ export function navbar() {
       <img alt="Instagram" class="nav_image" src="./src/assets/img/instagram.png"
         srcset="./src/assets/img/instagram2x.png 2x" />
     </a>
-    <input class="search" autocapitalize="none" type="text" placeholder="Search" />
+    <input class="search" autocapitalize="none" type="text" placeholder="검색" />
     <div>
       <svg aria-label="Find People" class="navbar-icon" fill="#262626" height="24" viewBox="0 0 48 48" width="24">
         <path clip-rule="evenodd"
