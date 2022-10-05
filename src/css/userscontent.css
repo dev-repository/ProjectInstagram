@@ -5,7 +5,7 @@
 .post-card {
   background-color: var(--card-bg-color);
   box-shadow: 0px 0px 2px #00000063;
-  margin-bottom: -300px;
+  margin-bottom: 60px;
 }
 
 .post-header {
