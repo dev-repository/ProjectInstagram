@@ -43,10 +43,42 @@
                 </div>
             </div>
         </header>
+        
+        <div class="profile__profiless" role="tablist">
+            <ul class="tab-container__item" data-name="목록">
+                <li class="profile___a checked" data-tab="tab1">게 시 물</li>
+                <li class="profile___a" data-tab="tab2">저 장 됨</li>
+                <li class="profile___a" data-tab="tab3">태 그 됨</li>
+            </ul>
+        </div>
+        <div class="profile__content">
+            <div id="tab1" class="profile__content_title checked">
+                <div>
+                    <h3>게시물</h3>
+                </div>
+                <div>나의 게시물을 저장하는 공간.</div>
+            </div>
+            <div id="tab2" class="profile__content_title">
+                <div>
+                    <h3>저장</h3>
+                </div>
+                <div>다시 보고 싶은 사진과 동영상을 저장하세요.
+                    콘텐츠를 저장해도 다른 사람에게 알림이 전송되지 않으며,
+                    저장된 콘텐츠는 회원님만 볼 수 있습니다.</div>
+            </div>
+            <div id="tab3" class="profile__content_title">
+                <div>
+                    <h3>내가 나온 사진</h3>
+                </div>
+                <div>사람들이 회원님을 사진에 태그하면 태그된 사진이 
+                    여기에 표시됩니다.</div>
+            </div>
+        </div>
     </section>
     <!--Section Content-->
 
     <script type="module" src="./index.js"></script>
+    <script type="module" src="./src/js/profile.js"></script>
 </body>
 
 </html>
