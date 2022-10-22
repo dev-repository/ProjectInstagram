@@ -1,8 +1,8 @@
-import { modal } from "./addPost";
+import { modal } from "./openMoal";
 
 const tabItem = document.querySelectorAll(".profile___a");
 const tabContent = document.querySelectorAll(".profile__content_title");
-const modalOpen = document.querySelector("#modalOpen");
+const modalOpen = document.getElementById("modalOpen");
 
 // modal open
 modalOpen.innerHTML = modal();
@@ -23,5 +23,7 @@ function tabHandler(item) {
     document.querySelector("#" + target).classList.add("checked");
     tabTarget.classList.add("checked");
 }
+
+// 저장하기
 
 
