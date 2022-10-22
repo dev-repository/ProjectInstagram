@@ -140,6 +140,34 @@ float: left;
 .profile__profiless .profile__content_title.active{
   display: block;
 }
+
+._acao, ._acao:visited, a._acao, a._acao:visited {
+  border: 0;
+  color: rgb(var(--ig-primary-button));
+  display: inline-block;
+  padding: 0!important;
+  position: relative;
+}
+._acan {
+  margin: 0 auto;
+  color: rgb(0, 149, 246);
+  font-weight: bold;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-family: var(--font-family-system);
+  font-size: 14px;
+  padding: 5px 9px!important;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: inherit;
+  -webkit-user-select: none;
+  width: auto;
+}
+
 @media (max-width: 735px) {
   .profile-wrapper {
     padding: 0 20px;
