@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/instagram.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>instagram</title>
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/css/general.css" />
+    <link rel="stylesheet" href="./src/css/edit.css" />
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav id="nav" class="nav"></nav>
+    <!--Navbar-->
+
+    <!--Section Content-->
+    <section class="container container-top">
+        <div class="edit-wrapper">
+            <div class="menus-wrapper">
+                <ul class="menus">
+                    <li class="menu-item">
+                        <a href="./edit.html" class="menu-link active">프로필 편집</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./password.html" class="menu-link">비밀번호 변경</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="edit-form-wrapper">
+                <div class="edit-profile-section">
+                    <div class="edit-width">
+                        <img class="edit-profile-picture" src="./src/assets/img/pretty.jpeg" />
+                    </div>
+                    <div>
+                        <h1 class="edit-profile-username">darklordcodes</h1>
+                        <span class="edit-profile-btn">프로필 사진 바꾸기</span>
+                    </div>
+                </div>
+                <form>
+                    <div class="edit-section">
+                        <div class="edit-width">
+                            <label for="name" class="form-label">이름</label>
+                        </div>
+                        <div>
+                            <input class="form-input" type="text" name="name" id="name" />
+                        </div>
+                    </div>
+                    <div class="edit-section">
+                        <div class="edit-width">
+                            <label for="username" class="form-label">사용자 이름</label>
+                        </div>
+                        <div>
+                            <input class="form-input" type="text" name="username" id="username" />
+                        </div>
+                    </div>
+                    <div class="edit-section">
+                        <div class="edit-width">
+                            <label for="website" class="form-label">웹사이트</label>
+                        </div>
+                        <div>
+                            <input class="form-input" type="text" name="website" id="website" />
+                        </div>
+                    </div>
+                    <div class="edit-section">
+                        <div class="edit-width">
+                            <label for="email" class="form-label">이메일</label>
+                        </div>
+                        <div>
+                            <input class="form-input" type="email" name="email" id="email" />
+                        </div>
+                    </div>
+                    <div class="edit-section">
+                        <div class="edit-width">
+                            <label for="bio" class="form-label">소개</label>
+                        </div>
+                        <div>
+                            <textarea class="form-input resize" name="bio" id="bio" cols="2" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="edit-section">
+                        <div class="edit-width">
+                            <label for="phone" class="form-label">전화번호</label>
+                        </div>
+                        <div>
+                            <input class="form-input" type="tel" name="phone" id="phone" />
+                        </div>
+                    </div>
+                    <div class="edit-section">
+                        <div class="edit-width">
+                            <label for="gender" class="form-label">성별</label>
+                        </div>
+                        <div>
+                            <select class="form-input">
+                                <option value="남성">남성</option>
+                                <option value="여성">여성</option>
+                                <option value="밝히고 싶지 않음">밝히고 싶지 않음</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="edit-section">
+                        <div class="edit-width"></div>
+                        <div>
+                            <button class="form-btn">제출</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Javascript-->
+    <script type="module" src="/index.js"></script>
+    <!--Javascript-->
+</body>
+
+</html>
