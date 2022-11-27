@@ -52,6 +52,8 @@ export function modal() {
     // for(let i =0; i<postComment.length; i++){
     //     // console.log(instaComment[i]);
     //     // console.log(instaId[i]);
-    //     console.log(i)
+        console.log(i)
     // }
+
+
 }
