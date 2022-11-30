@@ -18,9 +18,9 @@
       <header class="form-logo-wrapper">
         <img class="form-logo" alt="Instagram" src="./src/assets/img/instagram2x.png" />
       </header>
-      <form>
+      <form class="inbutton">
         <div class="form-wrapper">
-          <div class="form-label-group">
+          <div class="form-label-group" id="first">
             <input type="text" id="username" class="form-control is-invalid" placeholder="username" required
               autofocus />
             <div class="invalid-feedback">
@@ -29,7 +29,7 @@
             <label for="username">Username</label>
           </div>
 
-          <div class="form-label-group">
+          <div class="form-label-group" id="second">
             <input type="email" id="inputEmail" class="form-control is-invalid" placeholder="Email address" required />
             <div class="invalid-feedback">
               Email을 입력하세요
@@ -37,7 +37,7 @@
             <label for="inputEmail">Email address</label>
           </div>
 
-          <div class="form-label-group">
+          <div class="form-label-group" id="third">
             <input type="password" id="inputPassword" class="form-control is-invalid" placeholder="Password" required />
             <div class="invalid-feedback">
               password를 입력하세요
@@ -56,5 +56,68 @@
     </div>
   </section>
 </body>
+<script>
+  const input = document.querySelector("#first");
+  const input_one = input.querySelector("input");
+  const email = document.querySelector("#second");
+  const email_one = email.querySelector("input");
+  const password1 = document.querySelector("#third");
+  const password1_one = password1.querySelector("input");
+
+  const form = document.querySelector(".inbutton");
+
+
+  function handleSubmitId(){
+      console.log("start");
+      let currentId = input_one.value;
+      let currentEmail = email_one.value;
+      let currentPassword = password_one.value;
+      localStorage.setItem(currentId, currentPassword);
+      localStorage.setItem(currentEmail);
+  }
+  function init(){
+      form.addEventListener("click",handleSubmitId);
+      console.log("111");
+  }
+  init();
+</script>
+<!-- <script>
+  const getSavedUserInfos = () => {
+    const userInfosJSON = localStorage.getItem('userInfos')
+    try {
+      return userInfosJSON ? JSON.parse(userInfosJSON) : []
+    } catch {
+      return []
+    }
+  }
+
+  const saveUserInfos = (userInfos) => {
+    localStorage.setItem('userInfos', JSON.stringify(userInfos))
+  }
+
+  const userId = uuidv4()
+  let userInfos = getSavedUserInfos()
+  let userInfo = userInfos.find((userInfo) => userInfo.id === userId)
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    checkRequired([username, email, password, password2])
+    checkLength(username, 3, 15)
+    checkLength(password, 6, 25)
+    checkEmail(email)
+    checkPasswordsMatch(password, password2)
+
+    userInfos.push({
+      id: userId,
+      username: username.value,
+      email: email.value,
+      password: password.value
+    })
+
+    saveUserInfos(userInfos)
+  })
+
+</script> -->
 
 </html>
