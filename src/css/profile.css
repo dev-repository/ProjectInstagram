@@ -172,6 +172,12 @@ float: left;
   font-size: 90px;
 }
 
+.keyUp{
+  border: red;
+}
+
+
+
 @media (max-width: 735px) {
   .profile-wrapper {
     padding: 0 20px;
