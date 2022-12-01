@@ -34,8 +34,8 @@ function addList() {
     const addBtn = document.querySelector("#addButton");
 
     modelIpt.addEventListener("keyup", (e) => {
-        console.log(`디버깅 TEST modelIpt ======> ${modelIpt}`);
         if (e.target.value.trim().length) {
+            modelIpt.classList.add("activeIpt");
             addBtn.classList.add("active");
             return;
         }
@@ -43,18 +43,12 @@ function addList() {
 
     addBtn.addEventListener("click", (e) => {
 
-        console.log(`디버깅 TEST addBtn ======> ${addBtn}`);
-
         const text = modelIpt.value;
         if (!text) return;
 
         const getList = getLists();
-        console.log(`getList 디버깅 TEST ======> ${getList}`);
         getList.push(text);
         localStorage.setItem("Instargram", JSON.stringify(getList));
-
-        const myModal = new bootstrap.Modal("#exampleModal");
-        myModal.hide();
         
         modelIpt.value = "";
     });

@@ -176,7 +176,19 @@ float: left;
   border: red;
 }
 
+.activeBtn{
+  opacity: 0.6;
+  pointer-events: none;
+}
 
+.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.activeIpt{
+  border-color: red; box-shadow: 0 0 10px red;
+}
 
 @media (max-width: 735px) {
   .profile-wrapper {
