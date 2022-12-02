@@ -66,18 +66,17 @@
 
   const form = document.querySelector(".inbutton");
 
-
   function handleSubmitId(){
       console.log("start");
       let currentId = input_one.value;
       let currentEmail = email_one.value;
-      let currentPassword = password_one.value;
+      let currentPassword = password1_one.value;
       localStorage.setItem(currentId, currentPassword);
       localStorage.setItem(currentEmail);
   }
   function init(){
       form.addEventListener("click",handleSubmitId);
-      console.log("111");
+      // console.log("111");
   }
   init();
 </script>
