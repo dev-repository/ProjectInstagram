@@ -9,11 +9,11 @@ export function modal() {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ...
+                <input class="form-control" id="addContents">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-                <button type="button" class="btn btn-primary">저장하기</button>
+                <button type="button" class="btn btn-primary activeBtn" id="addButton">저장하기</button>
               </div>
             </div>
           </div>
