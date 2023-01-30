@@ -10,6 +10,7 @@ export function modal() {
               </div>
               <div class="modal-body">
                 <input class="form-control" id="addContents">
+                <p class="notMessage">게시글을 입력해주세요</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>

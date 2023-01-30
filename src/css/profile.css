@@ -187,7 +187,18 @@ float: left;
 }
 
 .activeIpt{
-  border-color: red; box-shadow: 0 0 10px red;
+  border-color: red;
+  box-shadow: 0 0 10px red;
+}
+
+.notMessage{
+  font-size: 13px;
+  color: red;
+  margin-bottom: auto;
+}
+
+.displayNone{
+  display: none;
 }
 
 @media (max-width: 735px) {

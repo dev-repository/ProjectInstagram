@@ -5,8 +5,6 @@ const tabItem = document.querySelectorAll(".profile___a");
 const tabContent = document.querySelectorAll(".profile__content_title");
 const modalOpen = document.getElementById("modalOpen");
 
-
-
 // modal open
 modalOpen.innerHTML = modal();
 
@@ -32,27 +30,34 @@ function addList() {
     //model input
     const modelIpt = document.querySelector("#addContents");
     const addBtn = document.querySelector("#addButton");
+    const message = document.querySelector(".notMessage");
 
     modelIpt.addEventListener("keyup", (e) => {
         if (e.target.value.trim().length) {
-            modelIpt.classList.add("activeIpt");
             addBtn.classList.add("active");
+            message.classList.add('displayNone');
             return;
         }
     });
-
     addBtn.addEventListener("click", (e) => {
-
         const text = modelIpt.value;
         if (!text) return;
 
         const getList = getLists();
         getList.push(text);
         localStorage.setItem("Instargram", JSON.stringify(getList));
-        
+
         modelIpt.value = "";
+
+        function hideFunc() {
+            const truck_modal = document.querySelector('#exampleModal');
+            const modal = bootstrap.Modal.getInstance(truck_modal);    
+            modal.hide();
+        }
+        hideFunc();
     });
 }
+
 addList();
 
 
